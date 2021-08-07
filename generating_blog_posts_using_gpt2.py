@@ -1,5 +1,6 @@
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
+# for using large models, use "gpt2-large" instead of "gpt2"
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
 model = GPT2LMHeadModel.from_pretrained('gpt2', pad_token_id=tokenizer.eos_token_id)
 
